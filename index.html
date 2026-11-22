@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marvin Buendia Portfolio</title>
+<meta name="description" content="Portfolio of Marvin Peñero Buendia: seminars in AI and data analytics, cloud computing, digital transformation and cyber awareness.">
+<meta property="og:title" content="Marvin Buendia Portfolio">
+<meta property="og:description" content="Seminars in AI and data analytics, cloud computing, digital transformation and cyber awareness.">
+<meta property="og:image" content="assets/profile.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap">
+<style>
+:root{
+  --ground:#EEF1F5; --ink:#0E1726; --muted:#3F4A5E; --line:#D3D9E2; --card:#FFFFFF;
+  --accent:#2447E0; --night:#0B1220; --night-2:#101A2E; --night-line:#26324E; --night-text:#C9D2E3; --night-accent:#9DB2FF;
+  --display:'Space Grotesk',system-ui,sans-serif; --body:Inter,system-ui,sans-serif; --mono:'JetBrains Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55}
+img{max-width:100%}
+a{color:var(--accent)}
+.wrap{max-width:1200px;margin:0 auto;padding-inline:max(24px,env(safe-area-inset-left,0px))}
+.mono{font-family:var(--mono)}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0}
+h2{font-weight:600;font-size:44px;line-height:1.1;letter-spacing:-.02em}
+.label{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#5A6579}
+:focus-visible{outline:3px solid var(--night-accent);outline-offset:3px}
+
+/* hero */
+header{background:var(--night);color:#F4F6FA}
+header .wrap{padding-block:28px 80px;display:flex;flex-direction:column;gap:72px}
+nav{display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center;justify-content:space-between}
+nav .brand{font-family:var(--mono);font-size:14px;letter-spacing:.08em}
+nav .links{display:flex;flex-wrap:wrap;gap:8px 28px;font-size:15px}
+nav .links a{color:var(--night-text);text-decoration:none;padding:10px 0}
+nav .links a:hover{color:#fff}
+.hero{display:flex;flex-wrap:wrap;gap:56px 64px;align-items:flex-end}
+.hero-copy{flex:1 1 520px;min-width:0;display:flex;flex-direction:column;gap:28px}
+.hero-copy .eyebrow{color:var(--night-accent);font-size:13px}
+.hero h1{font-weight:700;font-size:clamp(44px,7.4vw,104px);line-height:.98;letter-spacing:-.03em}
+.hero p{margin:0;max-width:560px;font-size:20px;line-height:1.5;color:var(--night-text)}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 24px;border-radius:8px;text-decoration:none;font-weight:600}
+.btn.primary{background:var(--night-accent);color:var(--night)}
+.btn.ghost{border:1px solid #3A4766;color:#F4F6FA;font-weight:500}
+.hours{flex:1 1 380px;min-width:0;border:1px solid var(--night-line);border-radius:14px;padding:28px;background:var(--night-2);display:flex;flex-direction:column;gap:22px}
+.hours .head{display:flex;justify-content:space-between;gap:16px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#A9B3C6}
+.bar-row{display:flex;flex-direction:column;gap:6px}
+.bar-row .t{display:flex;justify-content:space-between;gap:12px;font-size:15px}
+.bar-row .t span:last-child{font-family:var(--mono)}
+.track{height:10px;background:#1B2640;border-radius:3px}
+.fill{height:10px;background:var(--night-accent);border-radius:3px}
+.stats{display:flex;flex-wrap:wrap;gap:32px 56px;border-top:1px solid var(--night-line);padding-top:32px}
+.stat{flex:1 1 180px;min-width:0}
+.stat b{display:block;font-family:var(--display);font-weight:600;font-size:44px;line-height:1.1}
+.stat span{color:#A9B3C6;font-size:15px}
+
+/* about */
+#about .wrap{padding-block:96px 0;display:flex;flex-wrap:wrap;gap:48px 72px;align-items:center}
+.portrait{flex:0 1 380px;min-width:0;width:100%;max-width:380px}
+.portrait img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;border-radius:14px;background:#DCE2EC}
+.about-copy{flex:1 1 420px;min-width:0;display:flex;flex-direction:column;gap:24px}
+.about-copy p{margin:0;font-size:18px;color:var(--muted);max-width:560px}
+.facts{display:flex;flex-wrap:wrap;gap:16px 40px;border-top:1px solid var(--line);padding-top:20px}
+.facts div{display:flex;flex-direction:column;gap:2px}
+.facts b{font-weight:500}
+
+/* seminars */
+#seminars .wrap,#focus .wrap{padding-block:96px 24px;display:flex;flex-direction:column;gap:40px}
+.sec-head{display:flex;flex-wrap:wrap;gap:24px 48px;align-items:flex-end;justify-content:space-between}
+.sec-head .t{display:flex;flex-direction:column;gap:12px;max-width:640px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:500 14px var(--body);min-height:44px;padding:0 18px;border-radius:8px;cursor:pointer;background:#fff;color:var(--ink);border:1px solid #C4CCD8}
+.chip[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.cards{display:flex;flex-wrap:wrap;gap:24px}
+.card{flex:1 1 480px;min-width:0;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:32px;display:flex;flex-direction:column;gap:24px}
+.card[hidden]{display:none}
+.card .cert{display:block;width:100%;height:auto;aspect-ratio:1287/910;object-fit:contain;border:1px solid var(--line);border-radius:8px;background:#F3F5F9}
+.card .top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:center}
+.card .date{font-family:var(--mono);font-size:13px;letter-spacing:.08em;color:var(--muted)}
+.tag{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;background:#E3E9FF;color:#1B38B8;padding:4px 10px;border-radius:4px}
+.card h3{font-weight:600;font-size:28px;line-height:1.2;letter-spacing:-.01em}
+.card .org{color:var(--muted);margin-top:8px}
+.meta{display:flex;flex-wrap:wrap;gap:16px 40px;border-top:1px solid #E1E6EE;padding-top:20px}
+.meta div{display:flex;flex-direction:column;gap:2px;min-width:0}
+.meta b{font-weight:500}
+.cid{background:#F3F5F9;border-radius:8px;padding:14px 16px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.cid code{font-family:var(--mono);font-size:13px;word-break:break-all}
+
+/* focus */
+.focus{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:24px}
+.focus div{border-top:2px solid var(--ink);padding-top:20px;display:flex;flex-direction:column;gap:10px}
+.focus b{font-family:var(--display);font-weight:600;font-size:22px}
+.focus span{color:var(--muted)}
+
+/* contact */
+#contact .wrap{padding-block:96px 80px}
+.contact{background:var(--night);color:#F4F6FA;border-radius:14px;padding:56px 40px;display:flex;flex-wrap:wrap;gap:40px 64px;justify-content:space-between}
+.contact .l{flex:1 1 360px;min-width:0;display:flex;flex-direction:column;gap:16px}
+.contact h2{font-size:40px}
+.contact p{margin:0;color:var(--night-text);max-width:460px}
+.contact .r{flex:1 1 320px;min-width:0;display:flex;flex-direction:column;gap:20px}
+.contact .r div{display:flex;flex-direction:column;gap:4px}
+.contact .label{color:#A9B3C6}
+.contact a{color:var(--night-accent);font-size:20px;word-break:break-word}
+.contact a.plain{color:#F4F6FA;text-decoration:none}
+footer{border-top:1px solid var(--line)}
+footer .wrap{padding-block:28px 40px;color:#4A5568;font-size:14px}
+
+@media (max-width:600px){
+  h2{font-size:34px}
+  .card{padding:20px}
+  .card h3{font-size:24px}
+  .contact{padding:36px 24px}
+  header .wrap{gap:48px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header id="top">
+<div class="wrap">
+  <nav aria-label="Primary">
+    <div class="brand">M.P. BUENDIA</div>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#seminars">Seminars</a>
+      <a href="#focus">Focus areas</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="hero-copy">
+      <div class="eyebrow">Portfolio · Learning record 2026</div>
+      <h1>Marvin Peñero Buendia</h1>
+      <p>Short, practical seminars in AI and data analytics, cloud computing, digital business and online security.</p>
+      <div class="btns">
+        <a class="btn primary" href="#seminars">View seminars</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <div class="hours" aria-label="Hours by topic">
+      <div class="head"><span>Hours by topic</span><span>Total 5 h</span></div>
+      <div class="bar-row"><div class="t"><span>Cloud computing</span><span>2 h</span></div><div class="track"><div class="fill" style="width:100%"></div></div></div>
+      <div class="bar-row"><div class="t"><span>AI and data analytics</span><span>1 h</span></div><div class="track"><div class="fill" style="width:50%"></div></div></div>
+      <div class="bar-row"><div class="t"><span>Digital transformation</span><span>1 h</span></div><div class="track"><div class="fill" style="width:50%"></div></div></div>
+      <div class="bar-row"><div class="t"><span>Cyber awareness</span><span>1 h</span></div><div class="track"><div class="fill" style="width:50%"></div></div></div>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><b>4</b><span>Seminars completed</span></div>
+    <div class="stat"><b>5 hrs</b><span>Of live learning</span></div>
+    <div class="stat"><b>Aug 14–17</b><span>Four days in 2026</span></div>
+    <div class="stat"><b>2</b><span>Training organizers</span></div>
+  </div>
+</div>
+</header>
+
+<main>
+<section id="about">
+<div class="wrap">
+  <div class="portrait">
+    <img src="assets/profile.jpg" alt="Marvin Buendia in a white t-shirt, cap and sunglasses, sitting in front of green hills" width="288" height="288">
+  </div>
+  <div class="about-copy">
+    <div class="eyebrow">About me</div>
+    <h2>Hi, I’m Marvin.</h2>
+    <p>In four days of August 2026 I went through cloud computing, business digital transformation, online identity safety, and AI with data analytics.</p>
+    <p>The topics turned out to connect: data lives in the cloud, businesses change how they run around it, and people need good habits to stay safe while using it. I’m here to keep learning how those pieces fit together.</p>
+    <div class="facts">
+      <div><span class="label">Full name</span><b>Marvin Peñero Buendia</b></div>
+      <div><span class="label">Latest seminar</span><b>17 Aug 2026</b></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="seminars">
+<div class="wrap">
+  <div class="sec-head">
+    <div class="t">
+      <div class="eyebrow">Certificates of participation</div>
+      <h2>Seminars I attended</h2>
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="Filter seminars by topic">
+      <button class="chip" type="button" data-f="all" aria-pressed="true">All · 4</button>
+      <button class="chip" type="button" data-f="ai" aria-pressed="false">AI &amp; Data · 1</button>
+      <button class="chip" type="button" data-f="cloud" aria-pressed="false">Cloud · 1</button>
+      <button class="chip" type="button" data-f="business" aria-pressed="false">Business · 1</button>
+      <button class="chip" type="button" data-f="security" aria-pressed="false">Security · 1</button>
+    </div>
+  </div>
+
+  <div class="cards">
+    <article class="card" data-topic="cloud">
+      <img class="cert" src="assets/cert-cloud.jpg" alt="Certificate of participation for Cloud 101: Cloud Computing 101, issued to Marvin Peñero Buendia by UpskillTechPH Training Services" loading="lazy" width="1287" height="910">
+      <div class="top"><div class="date">14 AUG 2026</div><div class="tag">Cloud</div></div>
+      <div><h3>Cloud 101: Cloud Computing 101 | Understanding the Basics</h3><div class="org">UpskillTechPH Training Services</div></div>
+      <div class="meta">
+        <div><span class="label">Duration</span><b>2 hours</b></div>
+        <div><span class="label">Format</span><b>Webinar</b></div>
+        <div><span class="label">Signed by</span><b>Alexander Lopez, Founder/Speaker · Rhealeth Lopez, HR &amp; Admin</b></div>
+      </div>
+      <div class="cid"><span class="label">Credential ID</span><code>a65d29b84bd6e17c511e3732f328f6ad</code></div>
+    </article>
+
+    <article class="card" data-topic="business">
+      <img class="cert" src="assets/cert-business.jpg" alt="Certificate of participation for Business 101: Intro to Business Digital Transformation, issued to Marvin Peñero Buendia by UpskillTechPH Training Services" loading="lazy" width="1287" height="910">
+      <div class="top"><div class="date">15 AUG 2026</div><div class="tag">Business</div></div>
+      <div><h3>Business 101: Intro to Business Digital Transformation</h3><div class="org">UpskillTechPH Training Services</div></div>
+      <div class="meta">
+        <div><span class="label">Duration</span><b>1 hour</b></div>
+        <div><span class="label">Format</span><b>Webinar</b></div>
+        <div><span class="label">Signed by</span><b>Alexander Lopez, Founder/Speaker · Rhealeth Lopez, HR &amp; Admin</b></div>
+      </div>
+      <div class="cid"><span class="label">Credential ID</span><code>b607b58301d918d1b14539983c1ac648</code></div>
+    </article>
+
+    <article class="card" data-topic="security">
+      <img class="cert" src="assets/cert-security.jpg" alt="Certificate of participation for Cyber Awareness: Digital Identity, issued to Marvin Peñero Buendia by UpskillTechPH Training Services" loading="lazy" width="1287" height="910">
+      <div class="top"><div class="date">15 AUG 2026</div><div class="tag">Security</div></div>
+      <div><h3>Cyber Awareness: Digital Identity | Protect Yourself Online</h3><div class="org">UpskillTechPH Training Services</div></div>
+      <div class="meta">
+        <div><span class="label">Duration</span><b>1 hour</b></div>
+        <div><span class="label">Format</span><b>Webinar</b></div>
+        <div><span class="label">Signed by</span><b>Vherbik Troy Cardenas, Resource Speaker · Alexander Lopez, Founder/Program Lead</b></div>
+      </div>
+      <div class="cid"><span class="label">Credential ID</span><code>18d440d828f0bfbbcaae24e3fab44828</code></div>
+    </article>
+
+    <article class="card" data-topic="ai">
+      <img class="cert" src="assets/cert-ai.jpg" alt="Certificate of participation for Smart Business with AI and Data Analytics, issued to Marvin P. Buendia by Ethel Programming Computer Programming Services" loading="lazy" width="1400" height="990">
+      <div class="top"><div class="date">17 AUG 2026</div><div class="tag">AI &amp; Data</div></div>
+      <div><h3>Smart Business with AI and Data Analytics</h3><div class="org">Ethel Programming Computer Programming Services</div></div>
+      <div class="meta">
+        <div><span class="label">Duration</span><b>1 hour</b></div>
+        <div><span class="label">Format</span><b>Online webinar via Google Meet</b></div>
+        <div><span class="label">Signed by</span><b>Ms. Ethel Grace Verana, CEO/Owner · Ms. Mikee V. Constantino, Speaker</b></div>
+      </div>
+      <div class="cid"><span class="label">Issuer record</span><code>DTI register number 7053745</code></div>
+    </article>
+  </div>
+</div>
+</section>
+
+<section id="focus">
+<div class="wrap">
+  <div class="sec-head"><div class="t">
+    <div class="eyebrow">Where my learning is pointed</div>
+    <h2>Focus areas</h2>
+  </div></div>
+  <div class="focus">
+    <div><b>AI and data analytics</b><span>Using AI and data to make smarter business decisions.</span></div>
+    <div><b>Cloud computing</b><span>The basics of how cloud computing works.</span></div>
+    <div><b>Digital transformation</b><span>An introduction to moving a business onto digital tools.</span></div>
+    <div><b>Cyber awareness</b><span>Protecting your digital identity online.</span></div>
+  </div>
+</div>
+</section>
+
+<section id="contact">
+<div class="wrap">
+  <div class="contact">
+    <div class="l">
+      <h2>Let’s talk about your next project</h2>
+      <p>Reach me by email, phone or LinkedIn.</p>
+    </div>
+    <div class="r">
+      <div><span class="label">Email</span><a href="mailto:mpbuendia857.pbox@parsu.edu.ph">mpbuendia857.pbox@parsu.edu.ph</a></div>
+      <div><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/marvin-buendia-78225b21b" target="_blank" rel="noopener noreferrer">linkedin.com/in/marvin-buendia-78225b21b</a></div>
+      <div><span class="label">Phone</span><a class="plain" href="tel:+639647401005">0964 740 1005</a></div>
+    </div>
+  </div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap"><span>© 2026 Marvin Peñero Buendia</span></div>
+</footer>
+
+<script>
+(function () {
+  var chips = document.querySelectorAll('#chips .chip');
+  var cards = document.querySelectorAll('.card');
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      var f = chip.getAttribute('data-f');
+      chips.forEach(function (c) { c.setAttribute('aria-pressed', c === chip ? 'true' : 'false'); });
+      cards.forEach(function (card) {
+        card.hidden = !(f === 'all' || card.getAttribute('data-topic') === f);
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
