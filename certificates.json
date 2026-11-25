@@ -63,5 +63,18 @@
     "idLabel": "Issuer record",
     "idValue": "DTI register number 7053745",
     "image": "assets/cert-webdev.jpg"
+  },
+  {
+    "date": "2026-10-23",
+    "topic": "AI & Data",
+    "title": "Future-Ready IT: Building Careers, Skills, and Opportunities in the Age of AI",
+    "organizer": "BSIT 4B",
+    "hours": 8,
+    "format": "Online webinar via Google Meet",
+    "signers": "Arjay F. Abio, MIT, LPT – Subject Teacher, Seminars and Tours  Kennedy C. Cuya, DIT – Department Chair, Computational Sciences Department  Engr. Emelina P. Padayao – Dean, College of Engineering and C",
+    "idLabel": "Credential ID",
+    "idValue": "",
+    "id": "future-ready-it-building-careers-skills--261023-afcf",
+    "image": "assets/cert-future-ready-it-building-careers-skills--261023-afcf.jpg"
   }
 ]
