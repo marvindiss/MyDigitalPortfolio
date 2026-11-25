@@ -1,0 +1,67 @@
+[
+  {
+    "id": "cloud-101",
+    "date": "2026-08-14",
+    "topic": "Cloud",
+    "title": "Cloud 101: Cloud Computing 101 | Understanding the Basics",
+    "organizer": "UpskillTechPH Training Services",
+    "hours": 2,
+    "format": "Webinar",
+    "signers": "Alexander Lopez, Founder/Speaker · Rhealeth Lopez, HR & Admin",
+    "idLabel": "Credential ID",
+    "idValue": "a65d29b84bd6e17c511e3732f328f6ad",
+    "image": "assets/cert-cloud.jpg"
+  },
+  {
+    "id": "business-101",
+    "date": "2026-08-15",
+    "topic": "Business",
+    "title": "Business 101: Intro to Business Digital Transformation",
+    "organizer": "UpskillTechPH Training Services",
+    "hours": 1,
+    "format": "Webinar",
+    "signers": "Alexander Lopez, Founder/Speaker · Rhealeth Lopez, HR & Admin",
+    "idLabel": "Credential ID",
+    "idValue": "b607b58301d918d1b14539983c1ac648",
+    "image": "assets/cert-business.jpg"
+  },
+  {
+    "id": "cyber-awareness",
+    "date": "2026-08-15",
+    "topic": "Security",
+    "title": "Cyber Awareness: Digital Identity | Protect Yourself Online",
+    "organizer": "UpskillTechPH Training Services",
+    "hours": 1,
+    "format": "Webinar",
+    "signers": "Vherbik Troy Cardenas, Resource Speaker · Alexander Lopez, Founder/Program Lead",
+    "idLabel": "Credential ID",
+    "idValue": "18d440d828f0bfbbcaae24e3fab44828",
+    "image": "assets/cert-security.jpg"
+  },
+  {
+    "id": "smart-business-ai",
+    "date": "2026-08-17",
+    "topic": "AI & Data",
+    "title": "Smart Business with AI and Data Analytics",
+    "organizer": "Ethel Programming Computer Programming Services",
+    "hours": 1,
+    "format": "Online webinar via Google Meet",
+    "signers": "Ms. Ethel Grace Verana, CEO/Owner · Ms. Mikee V. Constantino, Speaker",
+    "idLabel": "Issuer record",
+    "idValue": "DTI register number 7053745",
+    "image": "assets/cert-ai.jpg"
+  },
+  {
+    "id": "hands-on-web-development",
+    "date": "2026-08-20",
+    "topic": "Web Dev",
+    "title": "Hands-On Web Development (HTML, CSS, JavaScript)",
+    "organizer": "Ethel Programming Computer Programming Services",
+    "hours": 2,
+    "format": "Online webinar via Google Meet",
+    "signers": "Ms. Ethel Grace Verana, CEO/Owner · Mr. Maeron Joseph Reyes, Speaker",
+    "idLabel": "Issuer record",
+    "idValue": "DTI register number 7053745",
+    "image": "assets/cert-webdev.jpg"
+  }
+]
